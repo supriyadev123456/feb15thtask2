@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .top{
+            border: 1px solid black;
+            height: 600px;
+            display: grid;
+            /* align-content: center; */
+            text-align: center;
+            grid-template-columns: repeat(6,100px);
+            grid-template-rows: 100px,100px 100px;
+            gap: 5px;
+            
+            
+        }
+        .bottom{
+            display: grid;
+           background-color:pink;
+           align-content: center ;
+          
+        }
+        .c1{
+            grid-column-start:2 ;
+            grid-column-end: 6;
+            /* height: 100px; */
+        }
+        .c2{
+            grid-row-start:1 ;
+            grid-row-end:6 ;
+            /* height: 600px; */
+        }
+        .c3{
+           
+            grid-row-start:3 ;
+            grid-row-end: 6;
+        }
+        .c4{
+           
+           grid-row-start:3 ;
+           grid-row-end: 6;
+       }
+       
+       .c5{
+           
+           grid-row-start:3 ;
+           grid-row-end: 6;
+       }
+       
+        
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="bottom c1" >1 </div>
+        <div class="bottom c2">2</div>
+        <div class="bottom c3">3</div>
+        <div class="bottom c4">4</div>
+        <div class="bottom c5">5</div>
+        <div class="bottom c5">6</div>
+    </div>
+
+    </div>
+</body>
+</html>
